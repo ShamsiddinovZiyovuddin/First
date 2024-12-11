@@ -3,3 +3,4 @@ class ABC:
         self.name=name
     def info(self):
         return f"ism:{self.name}"
+a=ABC("Ali")
