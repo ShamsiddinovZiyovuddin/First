@@ -24,6 +24,8 @@
 #21.git merge branch nomi-brenchni xozirgi branchga yuklaydi
 
 #11.12.24
+
 #22.git checkout -b "test01"-yangi commit ichib turadi
 #23.git checkout commite idsi-yangi branch ochib vaqtincha commitga utqazadi
 #24.git merge --squash feature=3,4 commitni 1tta qilib branchga utkazadi
+#
