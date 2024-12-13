@@ -1,1 +1,2 @@
-#3chi repozitoriya
+class R3:
+    def __init__(self):
