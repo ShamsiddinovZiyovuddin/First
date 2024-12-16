@@ -1,2 +1,3 @@
-from 1
+from class_Goods import Goods
+from
 
