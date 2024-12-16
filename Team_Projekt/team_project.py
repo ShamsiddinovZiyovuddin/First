@@ -1,10 +1,6 @@
-from collections import UserDict
-
-from class_Goods import goods
-from class_Shop import supermarkets
-from class_User import users
+from Team_Projekt.class_Goods import goods
+from Team_Projekt.class_User import users
 from project.class_Goods import good1
-from project.class_User import user1
 
 
 def Shop():
