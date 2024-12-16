@@ -6,3 +6,5 @@ class Market:
         self. history=[]
 
 supermarket1=Market("Supermarket")
+
+supermarkets=[supermarket1]
