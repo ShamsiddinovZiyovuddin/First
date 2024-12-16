@@ -13,4 +13,4 @@ user3=User("Said",False,True,1113)
 user4=User("Diyor",False,True,1114)
 admin=User("Ikromali",True,False,1115)
 
-users=[user4,user2,user3,user1,admin]
+users=[admin,user1,user2,user3,user4]
