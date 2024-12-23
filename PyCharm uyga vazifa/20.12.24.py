@@ -1,6 +1,9 @@
 #1dan 101gacha;juft elementlari ko'paytmasiga toq elementlar ko'paytmasini ayiradigan funksiya
 #shuni single,multi threed va multiproccessingda tekshirib kurish
-import a
+import time,os
+from itertools import count
+from threading import Thread,current_thread
+from multiprocessing import Process,current_process
 
 sleep=5
 import time
@@ -24,10 +27,26 @@ def add_list(a:list,sec):
         print("javob:",total)
         if __name__=="__main__":
             s_time=time.time()
-            add_list(a,5)
+            #1
+            # add_list(a,5)
+            #2
+            # t1 = Thread(target=add_list, args=(sleep,))
+            # t2 = Thread(target=add_list, args=(sleep,))
+            # t1.start()
+            # t2.start()
+            # t1.join()
+            # t2.join()
+            #3
+            # p1 = Process(target=add_list, args=(sleep,))
+            # p2 = Process(target=add_list, args=(sleep,))
+            # p1.start()
+            # p2.start()
+            # p1.join()
+            # p2.join()
+
 
             e_time = time.time()
             vaqt=s_time-e_time
             print(vaqt)
-a= [a for i in range(1,101)]
-add_list(a)
+a= [i for i in range(1,101)]
+add_list(a,1)
