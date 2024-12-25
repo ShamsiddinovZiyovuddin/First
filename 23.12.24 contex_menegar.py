@@ -18,21 +18,21 @@
 # # __enter__ va __exit__ metodlari bilan maxsus sinf yaratib,
 # # context manager hosil qilish mumkin.
 #
-# # # class MyContextManager:
-# # #     def __enter__(self):
-# # #         print("Context ichiga kirdik")
-# # #         return self  # Agar biror qiymat kerak bo'lsa, uni qaytarish mumkin
-# # #
-# # #     def __exit__(self, exc_type, exc_value, traceback):
-# # #         print("Contextdan chiqyapmiz")
-# # #         if exc_type:
-# # #             print(f"Xatolik: {exc_value}")
-# # #         return True  # Agar xatoni bostirishni istasak, `True` qaytaramiz
-# # #
-# # #
-# # # with MyContextManager() as cm:
-# # #     print("Context manager ishlamoqda")
-# # #   raise ValueError("Xato yuz berdi!")  # Xatolikni sinab ko'rish uchun
+# class MyContextManager:
+#     def __enter__(self):
+#         print("Context ichiga kirdik")
+#         return self  # Agar biror qiymat kerak bo'lsa, uni qaytarish mumkin
+#
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         print("Contextdan chiqyapmiz")
+#         if exc_type:
+#             print(f"Xatolik: {exc_value}")
+#         return True  # Agar xatoni bostirishni istasak, `True` qaytaramiz
+#
+#
+# with MyContextManager() as cm:
+#     print("Context manager ishlamoqda")
+#   raise ValueError("Xato yuz berdi!")  # Xatolikni sinab ko'rish uchun
 #
 # # 2. contextlib moduli yordamida
 # # contextlib modulidagi @contextmanager dekoratori context manager yozishni osonlashtiradi.

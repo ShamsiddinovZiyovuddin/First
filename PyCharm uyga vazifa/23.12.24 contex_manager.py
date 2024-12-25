@@ -1,19 +1,14 @@
-from contextlib import contextmanager
+class MyContextManager:
+    def __enter__(self):
+        print("Context ichiga kirdik")
+        return self
 
-@contextmanager
-def file_manager(f_name,mode):
-    f=None
-    try:
-        print(f"Faylf'{f_name}' ochilyapti...")
-        f=open(f_name,mode)
-        yield f
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Contextdan chiqyapmiz")
+        if exc_type:
+            print(f"Xatolik: {exc_value}")
+        return True
 
-    finally:
-        if f:
-            print(print(f"Faylf'{f_name}' yopilyapti..."))
-            f.close()
-
-with file_manager('test.py','w') as file:
-        file.write("a=14")
-        #f=file.read
-        #print(f)
+with MyContextManager() as cm:
+  print("Context manager ishlamoqda")
+  raise ValueError("Xatoooooooooo")
