@@ -1,7 +1,3 @@
-#readdan tashqari boshqa funksiyalarini ishlatib ko'rish
-#masalan(append)
-
-
 from contextlib import contextmanager
 
 @contextmanager
