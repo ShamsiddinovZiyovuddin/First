@@ -1,5 +1,5 @@
 #malumot va metodni bir birlikda ifodalash (o'zgartiraolmaslik)
-#3x modefayr public,protacted,prime
+#3x modefayr: public,protacted,private
 
 class School:
     def __init__(self,title,classes):
